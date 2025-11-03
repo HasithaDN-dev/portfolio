@@ -7,6 +7,14 @@ import { defineConfig, globalIgnores } from 'eslint/config'
 export default defineConfig([
   globalIgnores(['dist']),
   {
+    // Node-only config files (vite, build scripts) need Node globals like `process`
+    files: ['vite.config.js', 'vite.config.*.js'],
+    languageOptions: {
+      globals: globals.node,
+      parserOptions: { sourceType: 'module' },
+    },
+  },
+  {
     files: ['**/*.{js,jsx}'],
     extends: [
       js.configs.recommended,
