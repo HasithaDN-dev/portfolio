@@ -5,28 +5,37 @@ on:
     branches:
       - main
 
+# Grant the workflow permission to push commit contents (needed to publish to gh-pages)
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # ensure the action has the token (this is true by default) and a full fetch
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build
         env:
-          BASE_URL: '/portfolio/'   # <-- replace if your repo name differs
+          BASE_URL: "/portfolio/" # <-- replace if your repo name differs
         run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
+          # Use the repository's GITHUB_TOKEN (workflow permission above allows writes)
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
