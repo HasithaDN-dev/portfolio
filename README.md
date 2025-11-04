@@ -1,16 +1,121 @@
-# React + Vite
+# 🚀 Hasitha Dananjaya - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website showcasing my skills, projects, and achievements as a Full-Stack Developer.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**[View Portfolio →](https://hasithadn-dev.github.io/portfolio/)**
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop devices
+- **Dark Theme**: Modern dark UI with green and blue accent colors
+- **Dynamic Greeting**: Time-based greeting (Good Morning/Afternoon/Evening)
+- **Interactive Components**: Smooth animations and hover effects
+- **Verified Certifications**: Direct links to Credly badge verification
+- **Project Showcase**: Detailed project cards with repository links
+- **Contact Integration**: Direct links to email, LinkedIn, GitHub, and coding profiles
 
-## Expanding the ESLint configuration
+## 🛠️ Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 19** - UI library
+- **Vite** - Build tool and dev server
+- **Tailwind CSS v4** - Utility-first CSS framework
+- **GitHub Pages** - Hosting
+- **GitHub Actions** - CI/CD pipeline
+
+## 📂 Project Structure
+
+```
+portfolio/
+├── src/
+│   ├── components/
+│   │   ├── About.jsx          # About me section
+│   │   ├── Awards.jsx         # Awards & certifications
+│   │   ├── Contact.jsx        # Contact information
+│   │   ├── Hero.jsx           # Hero section with greeting
+│   │   ├── Navigation.jsx     # Responsive navigation bar
+│   │   ├── Projects.jsx       # Project showcase
+│   │   └── Skills.jsx         # Technical skills grid
+│   ├── assets/                # Images and static assets
+│   ├── App.jsx                # Main app component
+│   ├── index.css              # Global styles and Tailwind imports
+│   └── main.jsx               # App entry point
+├── .github/workflows/         # CI/CD configuration
+├── public/                    # Public assets
+├── index.html                 # HTML template
+├── vite.config.js             # Vite configuration
+└── package.json               # Dependencies and scripts
+
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ and npm/pnpm/yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/HasithaDN-dev/portfolio.git
+   cd portfolio
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist/` directory.
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## 📝 Customization
+
+To customize this portfolio for your own use:
+
+1. Update personal information in components (Hero, About, Contact)
+2. Replace profile image in `src/assets/`
+3. Update projects array in `Projects.jsx`
+4. Modify certifications and awards in `Awards.jsx`
+5. Update skills in `Skills.jsx`
+6. Change color theme in `src/index.css`
+
+## 🔧 Configuration
+
+- **Base URL**: Set in `.env.production` and `vite.config.js` for GitHub Pages deployment
+- **Tailwind**: Using v4 with `@import "tailwindcss";` in `index.css`
+- **ESLint**: Configured in `eslint.config.js`
+
+## 📄 License
+
+© 2025 M.A.H.D. Navarathne. All rights reserved.
+
+## 📧 Contact
+
+- **Email**: hasithadananjaya894@gmail.com
+- **LinkedIn**: [hasitha-dananjaya](https://www.linkedin.com/in/hasitha-dananjaya-92b873284/)
+- **GitHub**: [HasithaDN-dev](https://github.com/HasithaDN-dev)
+
+---
+
+Built with ❤️ using React, Vite & Tailwind CSS
