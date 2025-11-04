@@ -1,4 +1,5 @@
 import React from 'react'
+import profileImg from '../assets/profile.jpeg'
 
 export default function Hero() {
   // Get greeting based on current time
@@ -12,9 +13,22 @@ export default function Hero() {
   return (
   <header id="hero" className="min-h-screen flex items-center bg-gradient-to-br from-gray-900 via-indigo-900 to-gray-800 text-gray-100 pt-20">
       <div className="max-w-5xl w-full mx-auto px-4 sm:px-6 py-16 sm:py-24 text-center">
-        <div className="mb-6">
+        {/* Profile Photo */}
+        <div className="mb-6 flex justify-center">
+          <img
+            src={profileImg}
+            alt="Hasitha Dananjaya - Full Stack Developer"
+            className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-contain bg-gray-800 border-4 border-green-400/50 shadow-2xl shadow-green-500/20"
+          />
+        </div>
+
+        <div className="mb-6 flex items-center justify-center gap-3 flex-wrap">
           <span className="inline-block px-4 py-2 bg-green-400/10 text-green-300 border border-green-400/30 rounded-full text-sm font-medium mb-4">
             Available for opportunities
+          </span>
+          <span className="inline-flex items-center gap-2 bg-green-400/10 text-green-200 px-3 py-1 rounded-full border border-green-400/30 text-sm font-semibold">
+            <svg className="w-4 h-4 text-green-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z"/></svg>
+            Seeking software engineering internships
           </span>
         </div>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-100 mb-4 leading-tight">
