@@ -2,20 +2,33 @@ import React from 'react'
 
 export default function About() {
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-3xl mx-auto px-6">
-        <h2 className="text-2xl font-bold mb-4">About</h2>
-        <p className="text-gray-700">I am a third-year undergraduate at the University of Colombo School of Computing, majoring in Computer Science. I have hands-on experience building web and mobile applications with React, React Native and Java. I'm comfortable working on Linux/Ubuntu environments and have experience with manual and API testing.</p>
+    <section id="about" className="py-20 bg-white">
+      <div className="max-w-4xl mx-auto px-6">
+        <h2 className="text-3xl font-bold mb-8 text-center">About me</h2>
+        <div className="prose prose-lg max-w-none">
+          <p className="text-gray-700 text-lg leading-relaxed mb-6">
+            I am a third-year undergraduate at the <strong>University of Colombo School of Computing</strong>, majoring in Computer Science. I have hands-on experience building web and mobile applications with React, React Native and Java. I'm comfortable working on Linux/Ubuntu environments and have experience with manual and API testing.
+          </p>
+          <p className="text-gray-700 text-lg leading-relaxed">
+            Outside of academics, I enjoy hiking, traveling and exploring new technologies. I'm passionate about cloud computing, system administration, and generative AI.
+          </p>
+        </div>
 
-        <h3 className="text-xl font-semibold mt-6">Education</h3>
-        <p className="text-gray-700 mt-2">BSc. in Computer Science — University of Colombo School of Computing (June 2023 – Present)</p>
-
-        <h3 className="text-xl font-semibold mt-6">Contact & Links</h3>
-        <ul className="text-gray-700 mt-2 space-y-1">
-          <li>Email: <a className="text-indigo-600" href="mailto:hasithadananjaya894@gmail.com">hasithadananjaya894@gmail.com</a></li>
-          <li>GitHub: <a className="text-indigo-600" href="https://github.com/HasithaDN-dev">HasithaDN-dev</a></li>
-          <li>LinkedIn: <a className="text-indigo-600" href="https://www.linkedin.com/in/hasitha-dananjaya-92b873284/">hasitha-dananjaya</a></li>
-        </ul>
+        <div className="mt-12 pt-8 border-t">
+          <h3 className="text-2xl font-semibold mb-6">Education</h3>
+          <div className="space-y-4">
+            <div className="border-l-4 border-indigo-600 pl-4">
+              <h4 className="text-lg font-semibold text-gray-900">Bachelor of Science in Computer Science</h4>
+              <p className="text-gray-600">University of Colombo School of Computing</p>
+              <p className="text-sm text-gray-500">June 2023 – Present</p>
+            </div>
+            <div className="border-l-4 border-gray-300 pl-4">
+              <h4 className="text-lg font-semibold text-gray-900">G.C.E. Advanced Level (2021)</h4>
+              <p className="text-gray-600">Mahinda Rajapaksa College, Homagama</p>
+              <p className="text-sm text-gray-500">Subjects: Chemistry (A), Combined Mathematics (B), Physics (B)</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )
