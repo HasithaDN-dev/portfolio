@@ -7,7 +7,7 @@ const projects = [
     period: 'June 2025 – Present',
     desc: 'Smart transport services system. Built the customer mobile app frontend using React Native and Tailwind CSS; designed the PostgreSQL schema with Prisma and implemented backend APIs with NestJS (TypeScript).',
     tech: 'React Native (Expo), NestJS, PostgreSQL, Prisma, TypeScript',
-    link: '#',
+    link: 'https://github.com/HasithaDN-dev/YathraGo',
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const projects = [
     period: 'August 2025 – Present',
     desc: 'Full-stack Todo web application with JWT authentication and Spring Boot backend. Features full CRUD, responsive UI and Docker-based deployment.',
     tech: 'React (Vite), Spring Boot 3, JWT, MySQL, Docker, Tailwind CSS',
-    link: '#',
+    link: 'https://github.com/HasithaDN-dev/TodoApp',
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const projects = [
     period: 'June 2024 – April 2025',
     desc: 'Domestic helper finding system. Built an admin dashboard with CRUD operations and responsive frontend components following MVC architecture.',
     tech: 'HTML5, CSS3, JavaScript, PHP, MySQL',
-    link: '#',
+    link: 'https://github.com/kaveeshanirmal/AideAura',
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ const projects = [
     period: 'June 2024 – Nov 2024',
     desc: 'Restaurant management system. Implemented receptionist dashboard and RESTful APIs using Express.js with MongoDB integration.',
     tech: 'React.js, Node.js, Express.js, MongoDB',
-    link: '#',
+    link: 'https://github.com/itsNaleeka/RAD-Group-Project',
   },
 ]
 

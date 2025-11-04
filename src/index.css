@@ -5,6 +5,33 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Accent gradient combining light green and blue */
+.btn-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(90deg,#6ee7b7 0%, #3b82f6 100%);
+  box-shadow: 0 8px 24px rgba(59,130,246,0.12);
+}
+.btn-accent:hover{
+  box-shadow: 0 12px 30px rgba(59,130,246,0.18);
+}
+
+/* small card tweaks for dark theme */
+.card-dark {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+/* readable badges on dark background */
+.badge-light-green{
+  background-color: rgba(110,231,183,0.08);
+  color: #86efac;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

@@ -25,16 +25,16 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 bg-gray-50">
+    <section id="skills" className="py-20 bg-gray-900 text-gray-100">
       <div className="max-w-5xl mx-auto px-6">
         <h2 className="text-3xl font-bold mb-12 text-center">Technical Skills</h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {skillCategories.map((category, idx) => (
-            <div key={idx} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <h3 className="text-lg font-semibold text-indigo-600 mb-4">{category.title}</h3>
+            <div key={idx} className="bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="text-lg font-semibold text-green-300 mb-4">{category.title}</h3>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, i) => (
-                  <span key={i} className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">
+                  <span key={i} className="px-3 py-1 bg-gray-700 text-green-200 text-sm rounded-full">
                     {skill}
                   </span>
                 ))}
