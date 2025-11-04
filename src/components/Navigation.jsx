@@ -8,7 +8,7 @@ export default function Navigation() {
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <a href="#hero" className="text-xl font-bold text-gray-100">M.A.H.D. Navarathne</a>
-          
+
           {/* Desktop menu */}
           <div className="hidden md:flex items-center gap-6">
             <a href="#about" className="text-gray-200 hover:text-green-300 transition-colors">About</a>
@@ -19,7 +19,7 @@ export default function Navigation() {
           </div>
 
           {/* Mobile menu button */}
-          <button 
+          <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2 text-gray-700"
             aria-label="Toggle menu"

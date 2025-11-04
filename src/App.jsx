@@ -9,7 +9,7 @@ import Contact from './components/Contact'
 
 export default function App() {
   return (
-    <div className="font-sans text-gray-900">
+    <div className="font-sans text-gray-100 bg-gray-900 min-h-screen">
       <Navigation />
       <Hero />
       <About />
@@ -17,9 +17,9 @@ export default function App() {
       <Projects />
       <Awards />
       <Contact />
-      <footer className="bg-gray-900 text-gray-300 text-center py-8">
+      <footer className="bg-black text-gray-400 text-center py-8 border-t border-gray-800">
         <p className="text-sm">© {new Date().getFullYear()} M.A.H.D. Navarathne. All rights reserved.</p>
-        <p className="text-xs mt-2 text-gray-500">Built with React, Vite & Tailwind CSS</p>
+        <p className="text-xs mt-2 text-gray-600">Built with React, Vite & Tailwind CSS</p>
       </footer>
     </div>
   )
