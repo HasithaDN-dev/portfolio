@@ -14,9 +14,18 @@ const awards = [
 ]
 
 const certifications = [
-  'AWS Educate: Getting Started with Storage',
-  'AWS Educate: Getting Started with Compute',
-  'AWS Educate: Introduction to Cloud 101'
+  {
+    title: 'AWS Educate: Getting Started with Compute',
+    url: 'https://www.credly.com/badges/ae0dabd4-6fe2-4f80-9538-450bc78763af/public_url'
+  },
+  {
+    title: 'AWS Educate: Getting Started with Storage',
+    url: 'https://www.credly.com/badges/294a598b-cea0-44b7-af96-010dcd5fb864/public_url'
+  },
+  {
+    title: 'AWS Educate: Introduction to Cloud 101',
+    url: 'https://www.credly.com/badges/a3c844e9-70e2-4002-9dc6-9a2c0286075a/linked_in_profile'
+  }
 ]
 
 export default function Awards() {
@@ -44,8 +53,19 @@ export default function Awards() {
           <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">Certifications</h3>
           <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {certifications.map((cert, idx) => (
-              <div key={idx} className="p-3 sm:p-4 border rounded-lg bg-gray-800 hover:border-green-400 transition-colors">
-                <p className="text-sm sm:text-base text-gray-200">{cert}</p>
+              <div key={idx} className="p-3 sm:p-4 border rounded-lg bg-gray-800 hover:border-green-400 transition-all group">
+                <p className="text-sm sm:text-base text-gray-200 mb-2">{cert.title}</p>
+                <a
+                  href={cert.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs sm:text-sm text-blue-400 hover:text-green-300 transition-colors font-medium"
+                >
+                  <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Verify Certificate
+                </a>
               </div>
             ))}
           </div>
