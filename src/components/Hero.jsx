@@ -1,6 +1,14 @@
 import React from 'react'
 
 export default function Hero() {
+  // Get greeting based on current time
+  const getGreeting = () => {
+    const hour = new Date().getHours()
+    if (hour < 12) return 'Good Morning'
+    if (hour < 18) return 'Good Afternoon'
+    return 'Good Evening'
+  }
+
   return (
   <header id="hero" className="min-h-screen flex items-center bg-gradient-to-br from-gray-900 via-indigo-900 to-gray-800 text-gray-100 pt-20">
       <div className="max-w-5xl w-full mx-auto px-4 sm:px-6 py-16 sm:py-24 text-center">
@@ -10,9 +18,12 @@ export default function Hero() {
           </span>
         </div>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-100 mb-4 leading-tight">
-          M.A.H.D. Navarathne
+          Hello, I'm Hasitha
         </h1>
-        <p className="text-xl sm:text-2xl text-green-300 mb-4 font-medium">Full‑Stack Developer · DevOps enthusiast</p>
+        <p className="text-2xl sm:text-3xl text-green-300 mb-4 font-medium animate-pulse">
+          {getGreeting()} 👋
+        </p>
+        <p className="text-xl sm:text-2xl text-blue-300 mb-4 font-medium">Full‑Stack Developer · DevOps enthusiast</p>
         <p className="text-base sm:text-lg text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
           I build modern, responsive web and mobile applications using React, React Native and Java — with a focus on clean design, performance and developer experience.
         </p>
