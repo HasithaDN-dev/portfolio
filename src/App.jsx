@@ -17,8 +17,8 @@ export default function App() {
       <Projects />
       <Awards />
       <Contact />
-      <footer className="bg-black text-gray-400 text-center py-8 border-t border-gray-800">
-        <p className="text-sm">© {new Date().getFullYear()} M.A.H.D. Navarathne. All rights reserved.</p>
+      <footer className="bg-black text-gray-400 text-center py-6 sm:py-8 border-t border-gray-800 px-4">
+        <p className="text-xs sm:text-sm">© {new Date().getFullYear()} M.A.H.D. Navarathne. All rights reserved.</p>
         <p className="text-xs mt-2 text-gray-600">Built with React, Vite & Tailwind CSS</p>
       </footer>
     </div>
