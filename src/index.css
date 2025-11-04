@@ -1,10 +1,4 @@
-:root {
-  /* Tailwind directives added — keep your existing defaults below */
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* Smooth scrolling for anchor links */
 html {
