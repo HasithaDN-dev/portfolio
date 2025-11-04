@@ -11,7 +11,7 @@ export default function App() {
       <Projects />
       <About />
       <Contact />
-      <footer className="text-center py-8 text-sm text-gray-500">© {new Date().getFullYear()} Your Name</footer>
+      <footer className="text-center py-8 text-sm text-gray-500">© {new Date().getFullYear()} M.A.H.D. Navarathne</footer>
     </div>
   )
 }
