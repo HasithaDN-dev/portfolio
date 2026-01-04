@@ -1,9 +1,13 @@
 /* eslint-env node */
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig, loadEnv } from "vite";
+import react from "@vitejs/plugin-react";
 
-// Use BASE_URL env at build time (set to '/REP0/' IN CI or for local production build)
-export default defineConfig({
-  base: process.env.BASE_URL || '/',
-  plugins: [react()],
-})
+// Load environment variables for the current mode so BASE_URL from
+// .env.production is applied when running `vite build` in CI.
+export default ({ mode }) => {
+  const env = loadEnv(mode, process.cwd(), "");
+  return defineConfig({
+    base: env.BASE_URL || "/",
+    plugins: [react()],
+  });
+};
